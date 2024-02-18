@@ -6,7 +6,7 @@ const Pagination = ({i,onChange}) => {
   
 
   return (
-    <div className="join">
+    <div className="join mt-4">
       {array.map((item, index) => (
         <>
   <input className="join-item btn btn-square" type="radio" name="options" value={index+1} aria-label={index+1} onChange={onChange} />
