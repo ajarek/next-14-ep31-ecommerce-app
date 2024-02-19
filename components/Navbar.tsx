@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='  navbar bg-base-100 shadow px-24 max-sm:px-4'>
+    <div className='max-w-[1440px] mx-auto fixed navbar bg-base-100 shadow px-24 max-sm:px-4 z-10'>
       <div className='navbar-start'>
       <div className='dropdown sm:hidden'>
           <div
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl gap-6'
+            className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl gap-4'
           >
            <Link  className='hover:underline transition-all ' href='/'>Homepage</Link>
            <Link  className='hover:underline transition-all ' href='/about'>About</Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className='navbar-end'>
       <ul
             
-            className='flex items-center gap-4 max-sm:hidden text-xl '
+            className='flex items-center gap-6 max-sm:hidden text-xl '
           >
           <Link  className='hover:underline transition-all ' href='/'>Homepage</Link>
            <Link className='hover:underline transition-all ' href='/about'>About</Link>
