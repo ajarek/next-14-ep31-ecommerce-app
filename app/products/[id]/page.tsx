@@ -1,4 +1,5 @@
 import { getData } from '@/api/fetch'
+import AddToCartBtn from '@/components/AddToCartBtn'
 import Image from 'next/image'
 
 const ProductDetail = async ({ params }: { params: { id: string } }) => {
@@ -9,8 +10,8 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-center px-12 py-24 max-lg:px-4 max-sm:px-2 '>
-      <div className=' grid grid-cols-2 max-sm:grid-cols-1 gap-4 w-full'>
-        <div  className='flex justify-center items-center relative border-2  p-4'>
+      <div className=' grid grid-cols-2 max-sm:grid-cols-1 gap-6 w-full'>
+        <div  className='flex justify-center items-center relative   '>
           <Image
             src={product?.thumbnail}
             alt={product?.title}
@@ -21,6 +22,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
               width: '100%',
               height: 'auto',
               objectFit: 'contain',
+              objectPosition: 'center',
             }}
           />
         </div>
@@ -33,7 +35,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
           <p>stock: <span className='font-semibold'>{product?.stock}</span></p>
           <p>price: <span className='font-semibold'>${(product?.price).toFixed(2)}</span></p>
           <p>discount percentage: <span className='font-semibold'>{product?.discountPercentage}%</span></p>
-          <button className='btn btn-primary'>Add Cart</button>
+          <AddToCartBtn id={product?.id} title={product?.title} description={product?.description} thumbnail={product?.thumbnail} price={product?.price} />
         </div>
       </div>
     </main>
