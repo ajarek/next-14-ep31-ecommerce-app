@@ -82,9 +82,9 @@ const Navbar = () => {
           </Link>
           <Link
             className='hover:underline transition-all '
-            href='/about'
+            href='/all'
           >
-            About
+            All Products
           </Link>
           <Link
             className='relative'
