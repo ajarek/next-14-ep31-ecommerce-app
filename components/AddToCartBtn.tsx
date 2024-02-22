@@ -9,29 +9,26 @@ type Props = {
   description: string
   thumbnail: string
   price: number
-  
 }
-const AddToCartBtn = ({ id, title, description, thumbnail, price }: Props ) => {
+const AddToCartBtn = ({ id, title, description, thumbnail, price }: Props) => {
   const router = useRouter()
   const { addItem } = useShoppingCart()
 
-  const item :any= {
+  const item: any = {
     id: id,
     title: title,
     description: description,
     thumbnail: thumbnail,
     price: price,
-    
   }
-  const handleCartBtn= () => {
+  const handleCartBtn = () => {
     addItem(item)
     router.push('/all')
   }
   return (
-    <button 
+    <button
       className='btn btn-primary'
-      onClick={ handleCartBtn}
-     
+      onClick={handleCartBtn}
     >
       Add to cart
     </button>

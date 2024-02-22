@@ -14,7 +14,7 @@ type Props = {
 
 const AllProducts = ({ products }: { products: Props[] }) => {
   const [filter, setFilter] = useState('all')
-  const[search,setSearch] = useState('')
+  const [search, setSearch] = useState('')
   return (
     <div className='w-full mb-2'>
       <label className='input input-bordered flex items-center gap-2 mb-4'>
@@ -96,7 +96,9 @@ const AllProducts = ({ products }: { products: Props[] }) => {
         </button>
       </div>
       {products
-      .filter((el: any) =>el.title.toLowerCase().includes(search.toLowerCase()))
+        .filter((el: any) =>
+          el.title.toLowerCase().includes(search.toLowerCase())
+        )
         .filter((el: any) =>
           filter === 'all' ? el.category : el.category === filter
         )

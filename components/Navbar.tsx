@@ -53,7 +53,7 @@ const Navbar = () => {
             >
               <span text-2xl>🛒</span>
               <span className='w-6 h-6 badge badge-primary   absolute -top-2 '>
-              {cartCount}
+                {cartCount}
               </span>
             </Link>
           </ul>

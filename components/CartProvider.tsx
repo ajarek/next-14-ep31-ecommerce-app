@@ -1,6 +1,6 @@
 'use client'
 type Props = {
-  children: React.ReactNode 
+  children: React.ReactNode
 }
 import { CartProvider as CProvider } from 'use-shopping-cart'
 const CartProvider = ({ children }: Props) => {

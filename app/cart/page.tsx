@@ -1,7 +1,7 @@
 'use client'
 
 import { useShoppingCart } from 'use-shopping-cart'
-import  CheckoutBtn from '@/components/CheckoutBtn'
+import CheckoutBtn from '@/components/CheckoutBtn'
 import Image from 'next/image'
 const Cart = () => {
   const {
@@ -15,7 +15,6 @@ const Cart = () => {
     decrementItem,
   } = useShoppingCart()
 
-  
   return (
     <main className='flex min-h-screen flex-col items-center justify-between px-12 py-24 max-lg:px-4 max-sm:px-2 scrollbar-thumb-blue-500 scrollbar-thin scrollbar-thumb-rounder scrollbar-track-white '>
       {cartCount === 0 ? (
@@ -37,7 +36,7 @@ const Cart = () => {
                         width={60}
                         height={60}
                         style={{
-                          maxWidth: '200px',  
+                          maxWidth: '200px',
                           width: 'auto',
                           height: '100%',
                           objectFit: 'contain',
@@ -73,8 +72,7 @@ const Cart = () => {
               <div className='text-xl'>${Number(totalPrice).toFixed(2)}</div>
             </div>
             <div className='flex  items-center justify-end mt-4'>
-
-            <CheckoutBtn  />
+              <CheckoutBtn />
             </div>
           </div>
         </>
