@@ -25,7 +25,7 @@ const AddToCartBtn = ({ id, title, description, thumbnail, price }: Props ) => {
   }
   const handleCartBtn= () => {
     addItem(item)
-    router.push('/')
+    router.push('/all')
   }
   return (
     <button 
