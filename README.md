@@ -11,10 +11,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="300" alt="Zrzut ekranu 2024-02-23 002207" src="https://github.com/ajarek/next-14-ep31-ecommerce-app/assets/61388692/82bf3716-b6c1-4d74-80ce-42012300a302">
 
 
+
 <img width="150" alt="Zrzut ekranu 2024-02-23 002351" src="https://github.com/ajarek/next-14-ep31-ecommerce-app/assets/61388692/79d969a5-cb03-4e6d-9aa4-625dde8afbeb">
-
 <img width="150" alt="Zrzut ekranu 2024-02-23 002510" src="https://github.com/ajarek/next-14-ep31-ecommerce-app/assets/61388692/e38c47dc-e41a-4479-8f8c-f1ec3b7600b7">
-
 <img width="150" alt="Zrzut ekranu 2024-02-23 002539" src="https://github.com/ajarek/next-14-ep31-ecommerce-app/assets/61388692/91b1e5a2-2136-489b-8543-4570cb54e06f">
 
 
